@@ -1,50 +1,54 @@
 # SkyCast - Find My Weather
-
-## Objective
+## Date:
+## Objective:
 To build a responsive single-page application using React that allows users to enter a city name and retrieve real-time weather information using the OpenWeatherMap API. This project demonstrates the use of Axios for API calls, React Router for navigation, React Hooks for state management, controlled components with validation, and basic styling with CSS.
+## Tasks:
 
-## Tasks
+#### 1. Project Setup
+Initialize React app.
 
-### 1️⃣ Project Setup
-- Initialize React app
-- Install dependencies: `npm install axios react-router-dom`
+Install necessary dependencies: npm install axios react-router-dom
 
-### 2️⃣ Routing
-- Set up `BrowserRouter` in `App.js`
-- Create two routes:
-  - `/` → Home page with input form
-  - `/weather` → Page to display weather results
+#### 2. Routing
+Set up BrowserRouter in App.js.
 
-### 3️⃣ Home Page (City Input)
-- Controlled input for city name
-- Validate input is not empty
-- On submit, navigate to `/weather` and store city name
+Create two routes:
 
-### 4️⃣ Weather Page (API Integration)
-- Use Axios to fetch data from OpenWeatherMap API
-- Show temperature, humidity, wind speed, weather condition
-- Convert & display temperature in Celsius and Fahrenheit using `useMemo`
+/ – Home page with input form.
 
-### 5️⃣ React Hooks
-- `useState` for city, weather data, loading state
-- `useEffect` to fetch on page load
-- `useCallback` to optimize submit handler
-- `useMemo` for conversion logic
+/weather – Page to display weather results.
 
-### 6️⃣ UI Styling (CSS)
-- Responsive, clean layout
-- Styled form, buttons, weather display, nav links
+#### 3. Home Page (City Input)
+Create a controlled input field for the city name.
 
-## Result
-✅ A fully functional weather app built with React & OpenWeatherMap API.
+Add validation to ensure the input is not empty.
 
----
+On valid form submission, navigate to /weather and store the city name.
 
-## Getting Started
+#### 4. Weather Page (API Integration)
+Use Axios to fetch data from the OpenWeatherMap API using the city name.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Show temperature, humidity, wind speed, and weather condition.
 
-To run it locally:
-```bash
-npm install
-npm start
+Convert and display temperature in both Celsius and Fahrenheit using useMemo.
+
+#### 5. React Hooks
+Use useState for managing city, weather data, and loading state.
+
+Use useEffect to trigger the Axios call on page load.
+
+Use useCallback to optimize form submit handler.
+
+Use useMemo for temperature conversion logic.
+
+#### 6. UI Styling (CSS)
+Create a responsive and clean layout using CSS.
+
+Style form, buttons, weather display cards, and navigation links.
+
+## Programs:
+
+## Output:
+
+## Result:
+A responsive single-page application using React that allows users to enter a city name and retrieve real-time weather information using the OpenWeatherMap API has been built successfully. 
